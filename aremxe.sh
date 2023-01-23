@@ -7,32 +7,20 @@
 
 # Actualizo todo todito
 
-sudo apt -y update
+apt -y update
 
 # Creamos una memoria de intercambio [ Swap File ] para no
 # tener errores al compilar .
 clear
 
-# Añado Syncthing
+dd if =/dev/zero of=/swapfile bs=1024 count=1048576
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile 
+echo /swapfile swap swap defaults 0 0 >> /etc/fstab
 
-# Add the release PGP keys:
-sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg -k
-
-# Add the "stable" channel to your APT sources:
-echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-# Add the "candidate" channel to your APT sources:
-echo "deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing candidate" | sudo tee /etc/apt/sources.list.d/syncthing.list
-
-# Update and install syncthing:
-sudo apt-get update
-sudo apt-get install syncthing
-
-
-# sudo dd if =/dev/zero of=/swapfile bs=1024 count=1048576
-# sudo chmod 600 /swapfile
-# sudo mkswap /swapfile
-# sudo swapon /swapfile 
-# sudo echo /swapfile swap swap defaults 0 0 >> /etc/fstab
+clear
+swapon -s
 
 # Instalo las dependencias que me permitirán compilar MXE
 
