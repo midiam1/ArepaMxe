@@ -13,6 +13,12 @@ sudo apt -y update
 # tener errores al compilar .
 clear
 
+# Añado Syncthing
+
+# Add the release PGP keys:
+sudo curl -o /usr/share/keyrings/syncthing-archive-keyring.gpg https://syncthing.net/release-key.gpg
+
+
 # sudo dd if =/dev/zero of=/swapfile bs=1024 count=1048576
 # sudo chmod 600 /swapfile
 # sudo mkswap /swapfile
