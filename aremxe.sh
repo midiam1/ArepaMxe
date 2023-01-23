@@ -30,8 +30,8 @@ clear
 cd /mnt
 # sudo git clone https://github.com/mxe/mxe.git
 
-cd mxe/pkg
-wget https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2
+# cd mxe/pkg
+# wget https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2
 
 # Compilamos boost y Qt5
 
