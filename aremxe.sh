@@ -7,7 +7,7 @@
 
 # Actualizo todo todito
 
-# sudo apt -y update
+sudo apt -y update
 
 # Creamos una memoria de intercambio [ Swap File ] para no
 # tener errores al compilar .
