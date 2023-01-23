@@ -37,4 +37,4 @@ sudo make MXE_TARGETS="i686-w64-mingw32.static" boost
 sudo make MXE_TARGETS="i686-w64-mingw32.static" qttools
 
 
-
+https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.gz
