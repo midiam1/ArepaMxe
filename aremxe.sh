@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Guión para compilar ArepaCoin
+# 012023
+
+# Gracias a Elpidio Moreno
+
 # Actualizo todo todito
 
 sudo apt -y update
