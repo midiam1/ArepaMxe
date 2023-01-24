@@ -41,16 +41,20 @@ sudo apt-get install webmin -y
 
 
 
-# Instalo las dependencias que me permitirán compilar MXE
+# Instalo las dependencias que me permitirán compilar MXE, vamos a trabajar con sudo su
 
-# sudo apt-get -y install p7zip-full autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libtool libltdl-dev libssl-dev libxml-parser-perl make openssl patch perl pkg-config python ruby scons sed unzip wget xz-utils
-# sudo apt-get -y install g++-multilib libc6-dev-i386
+apt-get -y install p7zip-full autoconf automake autopoint bash bison bzip2 cmake flex gettext git g++ gperf intltool libffi-dev libtool libltdl-dev libssl-dev libxml-parser-perl make openssl patch perl pkg-config python ruby scons sed unzip wget xz-utils
+apt-get -y install g++-multilib libc6-dev-i386
+apt get -y install lzip
+apt-get -y install python-mako
+apt-get -y install libgtk2.0-dev
+
 
 # Clone mxe desde el repositorio, al descargar crea el directorio
 # desde donde vamos a trabajar
 
 cd /mnt
-# sudo git clone https://github.com/mxe/mxe.git
+git clone https://github.com/mxe/mxe.git
 
 # cd mxe/pkg
 # wget https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2
