@@ -5,6 +5,8 @@
 
 # Gracias a Elpidio Moreno
 
+# Varias librerías fueron descargadas de https://fossies.org/
+
 # Actualizo todo todito
 
 apt -y update
@@ -56,14 +58,11 @@ apt-get -y install libgtk2.0-dev
 cd /mnt
 git clone https://github.com/mxe/mxe.git
 
-# cd mxe/pkg
-# wget https://boostorg.jfrog.io/artifactory/main/release/1.80.0/source/boost_1_80_0.tar.bz2
-
 # Compilamos boost y Qt5
 
-# cd /mnt/mxe
-# sudo make MXE_TARGETS="i686-w64-mingw32.static" boost
-# sudo make MXE_TARGETS="i686-w64-mingw32.static" qttools
+cd /mnt/mxe
+make MXE_TARGETS="i686-w64-mingw32.static" boost
+make MXE_TARGETS="i686-w64-mingw32.static" qttools
 
 
 
