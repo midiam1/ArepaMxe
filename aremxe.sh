@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Guión para compilar ArepaCoin
+# Probado en x32
 # 012023
 
 # Gracias a Elpidio Moreno
@@ -50,7 +51,8 @@ apt-get -y install g++-multilib libc6-dev-i386
 apt get -y install lzip
 apt-get -y install python-mako
 apt-get -y install libgtk2.0-dev
-
+apt-get -y install python-pip
+apt -y update
 
 # Clone mxe desde el repositorio, al descargar crea el directorio
 # desde donde vamos a trabajar
